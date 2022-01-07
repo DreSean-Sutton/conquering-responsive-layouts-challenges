@@ -1,18 +1,19 @@
-let $link = document.querySelector('#link');
-let $modal = document.querySelector('#modal');
+var $link = document.querySelector('#link');
+var $contentLayout = document.querySelector('#content-layout');
+var $modal = document.querySelector('#modal');
 
 $link.addEventListener('click', function(event) {
   event.preventDefault();
-  $modal.className = 'hidden';
-  // $modal.modal {
+  $modal.className = 'row modal-layout';
+  // $contentLayout.modal {
   //   backdrop: 'static',
   //   keyboard: false
   // })
 })
 
-$modal.addEventListener('click', function (event) {
-  event.preventDefault();
-  if (event.target.matches('#no-button') {
-    $modal.className = 'hidden'
+$modal.addEventListener('click', function(event) {
+  if (event.target.matches('#no-button')) {
+    event.preventDefault();
+    $modal.className = 'row modal-layout hidden'
   }
 })
