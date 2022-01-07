@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: roboto;
+  font-size: 21px;
+}
+
+main {
+  background-color: #23424A
+}
+
+h1 {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+p {
+  color: rgb(189, 185, 185);
+  margin-bottom: 1rem;
+}
+
+a {
+  color: black;
+  background-color: #38CFD9;
+  text-transform: uppercase;
+  text-decoration: none;
+  /* padding: 1em 2em; */
+  /* border-radius: 20%; */
+  margin-top: 3em;
+}
+
+.container {
+  width: vmin;
+  margin: 0 auto;
+  padding: 3em 2em;
+}
+
+.row {
+  display: flex;
+}
+
+.column-half {
+  width: 100%;
+}
