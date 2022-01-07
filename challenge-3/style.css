@@ -17,7 +17,7 @@ body {
 }
 
 main {
-  background: linear-gradient(90deg, hsl(240, 80%, 50%), hsl(180, 80%, 25%));
+  background: linear-gradient(45deg, hsl(240, 80%, 50%), hsl(180, 80%, 50%));
 }
 
 .content-layout {
@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.2);
 }
 
 #link:hover {
@@ -67,7 +67,7 @@ a:hover {
   width: 50%;
   margin: 0 auto;
   color: white;
-  background: linear-gradient(90deg, hsl(240, 80%, 50%), hsl(180, 80%, 25%));
+  background: linear-gradient(45deg, hsl(240, 80%, 50%), hsl(180, 80%, 50%));
   flex-wrap: wrap;
   padding: 3em;
   border-radius: 15px;

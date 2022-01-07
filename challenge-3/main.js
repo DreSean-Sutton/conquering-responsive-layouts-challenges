@@ -1,14 +1,10 @@
-var $link = document.querySelector('#link');
-var $contentLayout = document.querySelector('#content-layout');
-var $modal = document.querySelector('#modal');
+let $link = document.querySelector('#link');
+let $contentLayout = document.querySelector('#content-layout');
+let $modal = document.querySelector('#modal');
 
 $link.addEventListener('click', function(event) {
   event.preventDefault();
   $modal.className = 'row modal-layout';
-  // $contentLayout.modal {
-  //   backdrop: 'static',
-  //   keyboard: false
-  // })
 })
 
 $modal.addEventListener('click', function(event) {
