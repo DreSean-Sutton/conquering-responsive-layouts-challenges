@@ -13,7 +13,9 @@ body {
   line-height: 1.4;
 }
 
-header {
+/* HERO SECTION */
+
+.hero-background {
   background: linear-gradient(45deg, hsl(240, 80%, 50%), hsl(180, 80%, 50%));
   padding: 5em 0;
 }
@@ -52,6 +54,8 @@ a {
   font-weight: bold;
   letter-spacing: 0.5px;
 }
+
+/* MODAL SECTION */
 
 a:hover,
 a:focus {
@@ -104,8 +108,15 @@ a:focus {
   padding: 3em 0;
 }
 
-#three-columns h3 {
-  text-transform: capitalize;
+.two-column-color {
+  background-color: rgb(10,98,114);
+  color: white;
+}
+#two-column {
+  padding: 3em 0;
+}
+.two-column-layout {
+  width: 45%;
 }
 
 .container {
@@ -138,4 +149,11 @@ a:focus {
 
 .justify-content-space-between {
   justify-content: space-between;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+.capitalize {
+  text-transform: capitalize;
 }
