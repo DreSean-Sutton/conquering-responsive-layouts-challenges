@@ -9,30 +9,30 @@
   <title>Day 5</title>
 </head>
 <body>
-  <header class="container">
-    <div class="hero-background">
-      <section id="hero-section" class="content-layout">
-        <div class="container__text">
-          <h1>Responsive layouts don&apos;t have to be a struggle</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis fugiat ratione unde enim praesentium error, excepturi consequuntur facilis commodi quasi, maxime ducimus sunt sequi.</p>
-          <a id="link" href="">i want to learn</a>
-        </div>
-      </section>
-      <section id="modal" class="row modal-layout hidden">
-        <div class="column-full">
-          <h3>Are you sure?</h3>
-        </div>
-        <div class="column-half modal-anchor-layout">
-          <a id="no-button" class="modal-buttons" href="">NO</a>
-        </div>
-        <div class="column-half modal-anchor-layout">
-          <a id="yes-button" class="modal-buttons" href="https://github.com/DreSean-Sutton" target="_blank">YES</a>
-        </div>
-      </section>
+  <main id="hero-section" class="container hero-background">
+    <div class="content-layout">
+      <div class="hero__text">
+        <h1>Responsive layouts don&apos;t have to be a struggle</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis fugiat ratione unde enim praesentium error, excepturi consequuntur facilis commodi quasi, maxime ducimus sunt sequi.</p>
+        <a id="link" href="#">i want to learn</a>
+      </div>
     </div>
-  </header>
-  <main class="container">
-    <section id="three-columns" class="row content-layout justify-content-space-around text-align-center">
+  </main>
+  <section class="container">
+    <div id="modal" class="row modal-layout hidden">
+      <div class="column-full">
+        <h3>Are you sure?</h3>
+      </div>
+      <div class="column-half modal-anchor-layout">
+        <a id="no-button" class="modal-buttons" href="">NO</a>
+      </div>
+      <div class="column-half modal-anchor-layout">
+        <a id="yes-button" class="modal-buttons" href="https://github.com/DreSean-Sutton" target="_blank">YES</a>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <div id="three-columns" class="row content-layout justify-content-space-around text-align-center">
       <div class="column-three-tenth">
         <h2 class="capitalize">cheap</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus amet voluptatem quia at provident reprehenderit alias quo perferendis dolore. Repellendus.</p>
@@ -45,9 +45,10 @@
         <h2 class="capitalize">quality</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus amet voluptatem quia at provident reprehenderit alias quo perferendis dolore. Repellendus.</p>
       </div>
-    </section>
-    <div class="two-column-color">
-      <section id="two-column" class="row content-layout justify-content-space-around text-align-center">
+    </div>
+  </section>
+  <section class="container two-column-color">
+      <div id="two-column" class="row content-layout justify-content-space-around text-align-center">
         <div class="two-column-layout">
           <h2 class="capitalize">cheap</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id vel distinctio illo soluta voluptatibus delectus consequatur, corporis veniam blanditiis aliquid!</p>
@@ -56,9 +57,8 @@
           <h2 class="capitalize">quick</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id vel distinctio illo soluta voluptatibus delectus consequatur, corporis veniam blanditiis aliquid!</p>
         </div>
-      </section>
-    </div>
-  </main>
+      </div>
+  </section>
     <script src="main.js"></script>
   </body>
   </html>

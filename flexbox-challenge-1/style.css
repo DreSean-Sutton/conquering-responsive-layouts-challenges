@@ -20,7 +20,7 @@ body {
   padding: 5em 0;
 }
 
-.container__text {
+.hero__text {
   width: 70%;
 }
 
@@ -111,7 +111,7 @@ a:focus {
 /* TWO COLUMN SECTION */
 
 .two-column-color {
-  background-color: rgb(10,98,114);
+  background: linear-gradient(90deg, hsl(200, 80%, 40%) 30%, hsl(120, 80%, 30%) 50%, hsl(200, 80%, 40%));
   color: white;
 }
 
