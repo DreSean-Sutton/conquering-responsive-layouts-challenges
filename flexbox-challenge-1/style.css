@@ -104,6 +104,10 @@ a:focus {
   padding: 3em 0;
 }
 
+#three-columns h2 {
+  color: #87629A;
+}
+
 /* TWO COLUMN SECTION */
 
 .two-column-color {
