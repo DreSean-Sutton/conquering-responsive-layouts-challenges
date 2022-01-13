@@ -20,12 +20,6 @@ body {
   padding: 5em 0;
 }
 
-.content-layout {
-  width: 80%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
 .container__text {
   width: 70%;
 }
@@ -104,20 +98,28 @@ a:focus {
   color: hsl(120, 100%, 60%);
 }
 
+/* THREE COLUMN SECTION */
+
 #three-columns {
   padding: 3em 0;
 }
+
+/* TWO COLUMN SECTION */
 
 .two-column-color {
   background-color: rgb(10,98,114);
   color: white;
 }
+
 #two-column {
   padding: 3em 0;
 }
+
 .two-column-layout {
   width: 45%;
 }
+
+/* utility classes */
 
 .container {
 
@@ -143,6 +145,12 @@ a:focus {
   width: 25%;
 }
 
+.content-layout {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 .text-align-center {
   text-align: center;
 }
@@ -154,6 +162,7 @@ a:focus {
 .justify-content-space-around {
   justify-content: space-around;
 }
+
 .capitalize {
   text-transform: capitalize;
 }
