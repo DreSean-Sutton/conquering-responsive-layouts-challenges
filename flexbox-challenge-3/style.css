@@ -12,6 +12,12 @@ body {
   font-size: 1.3rem;
   line-height: 1.4;
 }
+
+header {
+  padding: 1rem 0;
+  background-color:hsl(240, 80%, 30%);
+}
+
 h1 {
   color: white;
   margin: 0 0 1rem;
@@ -24,6 +30,37 @@ img {
   max-width: 100%;
 }
 
+/* NAVBAR SECTION */
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  list-style: none;
+  border-radius: 10rem;
+}
+
+.nav__item:hover {
+  background-color: #38CFD9;
+}
+
+.nav__link {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  text-decoration: none;
+  color: white;
+}
+
+.nav__link:hover {
+  color:hsl(240, 80%, 30%);
+  transform: scale(1.05, 1.05);
+  transition: 50ms;
+}
+.nav__item + .nav__item {
+  margin-left: 10%;
+}
 
 /* HERO SECTION */
 
