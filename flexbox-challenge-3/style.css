@@ -24,24 +24,7 @@ img {
   max-width: 100%;
 }
 
-a {
-  display: inline-block;
-  color: black;
-  background-color: #38CFD9;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 3rem;
-  padding: 0.5em 1.5em;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-}
 
-a:hover,
-a:focus {
-  transform: scale(1.1, 1.2);
-  transition: ease-in 50ms;
-  box-shadow: inset 0 0 5px 5px hsl(180, 100%, 70%);
-}
 /* HERO SECTION */
 
 .hero-background {
@@ -68,6 +51,28 @@ a:focus {
 
 .hero__img img {
   width: 100%;
+}
+
+#hero-section a,
+#modal a {
+  display: inline-block;
+  color: black;
+  background-color: #38CFD9;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3rem;
+  padding: 0.5em 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+#hero-section a:hover,
+#modal a:hover,
+#hero-section a:focus,
+#modal a:focus {
+  transform: scale(1.1, 1.2);
+  transition: ease-in 50ms;
+  box-shadow: inset 0 0 5px 5px hsl(180, 100%, 70%);
 }
 
 #link:hover,
