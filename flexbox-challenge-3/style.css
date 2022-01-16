@@ -35,6 +35,7 @@ img {
 .nav__list {
   margin: 0;
   padding: 0;
+  /* justify-content: flex-end; */
 }
 
 .nav__item {
@@ -59,7 +60,7 @@ img {
   transition: 50ms;
 }
 .nav__item + .nav__item {
-  margin-left: 10%;
+  margin-left: 2%;
 }
 
 /* HERO SECTION */
