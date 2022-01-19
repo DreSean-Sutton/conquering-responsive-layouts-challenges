@@ -32,9 +32,13 @@ img {
 
 /* NAVBAR SECTION */
 
+#logo {
+  width: 40%;
+}
+
 .nav__list {
   margin: 0;
-  padding: 0 1rem;
+  padding: 0;
   white-space: nowrap;
 }
 
