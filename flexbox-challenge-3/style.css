@@ -34,8 +34,8 @@ img {
 
 .nav__list {
   margin: 0;
-  padding: 0;
-  /* justify-content: flex-end; */
+  padding: 0 1rem;
+  white-space: nowrap;
 }
 
 .nav__item {
@@ -216,6 +216,10 @@ img {
 
 .text-align-center {
   text-align: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
 }
 
 .justify-content-space-between {
