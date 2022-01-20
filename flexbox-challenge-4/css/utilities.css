@@ -11,7 +11,7 @@
 /* QUALITY DESIGN SECTION */
 #quality-design,
 #quality-design > .row {
-  min-height: 500px;
+  min-height: 550px;
 }
 
 .quality-design__text p + p {
