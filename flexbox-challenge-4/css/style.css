@@ -1,0 +1,25 @@
+:root {
+  --hero-background: #F3EED9;
+  --made-custom-background: #222C2A;
+  --created-for-you-background: #824936;
+}
+/* HERO SECTION */
+
+#hero-section {
+  background-color: var(--hero-background);
+}
+.hero__text > p {
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: playfair, serif;
+  font-size: 3rem;
+  color: #835656;
+  line-height: 0.9;
+  margin-top: 0;
+}

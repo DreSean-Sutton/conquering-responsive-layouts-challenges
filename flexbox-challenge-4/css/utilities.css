@@ -1,0 +1,41 @@
+/* HERO SECTION */
+#hero-section {
+  min-height: 660px;
+}
+
+.hero__text {
+  width: 80%;
+}
+
+/* UTILITY CLASSES */
+
+.content-layout {
+  width: 80%;
+  max-width: 1100px;
+  justify-content: center;
+  margin: auto;
+}
+
+.height {
+  min-height: 660px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.align-items-center {
+  align-items: center;
+}
