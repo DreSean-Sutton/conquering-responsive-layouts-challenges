@@ -1,4 +1,13 @@
+/* BASE SELECTORS */
+
+img {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+}
+
 /* HERO SECTION */
+
 #hero-section,
 #hero-section > .row {
   min-height: 660px;
@@ -9,6 +18,7 @@
 }
 
 /* QUALITY DESIGN SECTION */
+
 #quality-design,
 #quality-design > .row {
   min-height: 550px;
@@ -17,6 +27,9 @@
 .quality-design__text p + p {
   margin-left: 8%;
 }
+
+/* MADE CUSTOM SECTION */
+
 
 /* UTILITY CLASSES */
 

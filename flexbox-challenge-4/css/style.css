@@ -5,19 +5,7 @@
   --heading-colors: #835656;
 }
 
-/* HERO SECTION */
-
-#hero-section {
-  background-color: var(--hero-background);
-}
-.hero__text > p {
-  font-size: 1rem;
-  font-weight: 100;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-}
-
+/* BASE CSS SELECTORS */
 h1 {
   font-family: playfair, serif;
   font-size: 4.4rem;
@@ -26,22 +14,63 @@ h1 {
   margin-top: 0;
 }
 
-/* QUALITY DESIGNS SECTION */
+h2 {
+  font-size: 2.5rem;
+  font-family: playfair, serif;
 
-#quality-design {
-  text-align: center;
 }
+
+p {
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
+}
+
+/* HERO SECTION */
+
+#hero-section {
+  background-color: var(--hero-background);
+}
+.hero__text > p {
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+
+/* QUALITY DESIGNS SECTION */
 
 .quality-design__text > h2 {
   color: var(--heading-colors);
-  font-size: 2.5rem;
   margin-bottom: 1rem;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .quality-design__text p {
-  font-size: 1.2rem;
-  font-family: 'Roboto', sans-serif;
-  text-align: initial;
   line-height: 1.5em;
+}
+
+/* MADE CUSTOM SECTION */
+
+#made-custom {
+  background-color: var(--made-custom-background);
+  color: white;
+}
+
+#made-custom > .row {
+  padding: 5rem 0;
+}
+
+.made-custom__text > h2 {
+  margin-top: 0;
+}
+
+.made-custom__text > p {
+
+}
+
+.made-custom__img {
+  color: var(--made-custom-background);
 }
