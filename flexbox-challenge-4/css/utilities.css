@@ -1,5 +1,6 @@
 /* HERO SECTION */
-#hero-section {
+#hero-section,
+#hero-section > .row {
   min-height: 660px;
 }
 
@@ -7,19 +8,35 @@
   width: 80%;
 }
 
+/* QUALITY DESIGN SECTION */
+#quality-design,
+#quality-design > .row {
+  min-height: 500px;
+}
+
+.quality-design__text p + p {
+  margin-left: 8%;
+}
+
 /* UTILITY CLASSES */
 
-.content-layout {
-  width: 80%;
-  max-width: 1100px;
+.main-layout {
+  width: 60%;
   justify-content: center;
   margin: auto;
 }
 
-.height {
-  min-height: 660px;
+.content-layout {
+  width: 80%;
+  max-width: 1200px;
+  justify-content: center;
+  margin: auto;
 }
 
+
+.flex-wrap-wrap {
+  flex-wrap: wrap;
+}
 .text-align-center {
   text-align: center;
 }
