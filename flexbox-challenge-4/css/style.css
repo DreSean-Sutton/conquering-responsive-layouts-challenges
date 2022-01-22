@@ -9,7 +9,7 @@
 
 h1 {
   font-family: playfair, serif;
-  font-size: 4.4rem;
+  font-size: 3.8rem;
   color: var(--heading-colors);
   line-height: 0.9;
   margin-top: 0;
@@ -65,10 +65,6 @@ p {
   background-color: var(--made-custom-background);
   color: white;
 }
-
-/* .made-custom__img {
-  color: var(--made-custom-background);
-} */
 
 /* MADE WITH CARE */
 
