@@ -1,11 +1,12 @@
 :root {
   --hero-background: #F3EED9;
   --made-custom-background: #222C2A;
-  --created-for-you-background: #824936;
+  --created-with-care-background: #824936;
   --heading-colors: #835656;
 }
 
 /* BASE CSS SELECTORS */
+
 h1 {
   font-family: playfair, serif;
   font-size: 4.4rem;
@@ -24,6 +25,12 @@ p {
   font-size: 1.2rem;
   font-family: 'Roboto', sans-serif;
   line-height: 1.5em;
+}
+
+/* Border */
+
+.border-layout {
+  border: 2px solid black;
 }
 
 /* HERO SECTION */
@@ -59,18 +66,13 @@ p {
   color: white;
 }
 
-#made-custom > .row {
-  padding: 5rem 0;
-}
-
-.made-custom__text > h2 {
-  margin-top: 0;
-}
-
-.made-custom__text > p {
-
-}
-
-.made-custom__img {
+/* .made-custom__img {
   color: var(--made-custom-background);
+} */
+
+/* MADE WITH CARE */
+
+#created-with-care {
+  background-color: var(--created-with-care-background);
+  color: white;
 }
