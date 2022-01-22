@@ -254,3 +254,39 @@ img {
 .capitalize {
   text-transform: capitalize;
 }
+
+@media (max-width: 770px) {
+  .content-layout {
+    display: block;
+  }
+
+  .hero__text,
+  .hero__img,
+  .quality-design__text,
+  .quality-design__types h2,
+  .quality-design__types p {
+    width: 80%;
+    margin: auto;
+  }
+
+  .quality-design__types {
+    width: 100%;
+    text-align: revert;
+  }
+
+  .quality-design__types h2 {
+    padding: 2rem 0 0rem;
+  }
+
+  .quality-design__types p {
+    padding: 1rem 0;
+  }
+
+  .hero__text {
+    text-align: center;
+  }
+
+  .hero__text > a {
+    margin-bottom: 2rem;
+  }
+}
