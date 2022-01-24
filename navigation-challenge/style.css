@@ -60,6 +60,7 @@ header {
     background: #136c72;
     padding: 1em 0;
     text-align: center;
+    align-items: center;
 }
 
 .nav {
@@ -126,6 +127,7 @@ header {
     position: absolute;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 0.9rem;
 }
 
 .nav--visible {
@@ -140,20 +142,31 @@ header {
     margin: 0;
 }
 
-.nav__list + .nav__list {
-    margin-top: 3em;
+.nav__list {
+    margin: 0;
+    align-items: center;
 }
-.nav__list li {
+.nav__list  {
+    margin-bottom: 3em;
+}
+.nav__item {
     margin-top: 1em;
 }
 
-.nav__item > .nav__link {
+.nav__list--secondary > .nav__item:last-child {
+    margin-top: 2.5em;
+}
+
+.nav__link {
     color: white;
     text-decoration: none;
 }
 
-.nav__item > .nav__link--button {
-    display: inline-block;
+.nav__link:hover,
+.nav__link:focus {
+    opacity: .65;
+}
+.nav__link--button {
     color: rgb(19,108,114);
     background-color: white;
     padding: 0.75rem 1.5rem;
@@ -205,6 +218,7 @@ header {
 
 
     .nav {
+        position: relative;
         visibility: visible;
         display: flex;
         align-items: center;
@@ -214,27 +228,22 @@ header {
 
     .nav__list {
         display: flex;
+        margin-bottom: 0;
     }
 
-    .nav__list > li {
-        text-align: left;
-    }
-    .nav__list > li + li {
+    .nav__item {
+        margin-top: 0;
         margin-left: 1rem;
     }
 
-    .nav__list + .nav__list {
-        margin-left: 1rem;
+    .nav__list--secondary > .nav__item:last-child {
+    margin-top: 0;
     }
 
     .row {
         display: flex;
         justify-content: space-between;
 
-    }
-
-    .nav-layout {
-        align-items: center;
     }
 
     .hero__text {
