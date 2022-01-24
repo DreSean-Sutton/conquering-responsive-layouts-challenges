@@ -35,7 +35,7 @@ h1 {
 .btn {
     display: inline-block;
     text-decoration: none;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     color: #23424A;
     font-weight: 900;
     background-color: #38CFD9;
@@ -45,7 +45,7 @@ h1 {
 
 .btn:hover,
 .btn:focus {
-    opacity: .75; 
+    opacity: .75;
 }
 
 .container {
@@ -78,7 +78,7 @@ header {
     background: #072A2D;
     color: white;
     transition: opacity 250ms ease;
-    
+
     position: absolute;
     left: 0;
 }
@@ -118,20 +118,48 @@ header {
 
 /* made changes here from video
    to make it more accessible.
-   
+
    Works the same :) */
 .nav {
     visibility: hidden;
     height: 0;
     position: absolute;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .nav--visible {
     visibility: visible;
     height: auto;
     position: relative;
-} 
+}
 
+.nav__list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav__list + .nav__list {
+    margin-top: 3em;
+}
+.nav__list li {
+    margin-top: 1em;
+}
+
+.nav__item > .nav__link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav__item > .nav__link--button {
+    display: inline-block;
+    color: rgb(19,108,114);
+    background-color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10rem;
+    margin-top: 1rem;
+}
 
 .logo {
     height: 30px;
@@ -170,15 +198,33 @@ header {
 
 @media (min-width: 800px) {
 
-    
+
     .nav-toggle {
         display: none;
     }
 
+
     .nav {
         visibility: visible;
         display: flex;
+        align-items: center;
+        justify-content: flex-end;
         height: auto;
+    }
+
+    .nav__list {
+        display: flex;
+    }
+
+    .nav__list > li {
+        text-align: left;
+    }
+    .nav__list > li + li {
+        margin-left: 1rem;
+    }
+
+    .nav__list + .nav__list {
+        margin-left: 1rem;
     }
 
     .row {
@@ -187,16 +233,20 @@ header {
 
     }
 
+    .nav-layout {
+        align-items: center;
+    }
+
     .hero__text {
         width: 62%;
     }
-    
+
     .hero__img {
         width: 32%;
         align-self: flex-start;
         margin: 0;
     }
-    
+
     .primary-content {
         width: 62%;
     }
@@ -204,6 +254,6 @@ header {
     .sidebar {
         width: 32%;
     }
-    
-    
+
+
 }
