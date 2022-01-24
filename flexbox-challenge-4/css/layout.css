@@ -26,3 +26,57 @@
 .column-one-quarter {
   width: 25%;
 }
+
+@media (max-width: 600px) {
+  section .row {
+    display: block;
+  }
+
+  section h2 {
+    font-size: 2rem;
+    text-align: initial;
+  }
+
+  section p {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  #hero-section,
+  #hero-section > .row {
+    min-height: 400px;
+  }
+
+  #hero-section h1 {
+    font-size: 40px;
+  }
+
+  #hero-section p {
+    font-size: 0.8rem;
+  }
+
+  .main-layout {
+    width: 90%;
+  }
+
+  #quality-design h2 {
+    text-align: initial;
+  }
+
+  #quality-design p {
+    margin: 1rem 0 2rem;
+  }
+
+  .column-46-percent {
+    width: 100%;
+  }
+
+  .created-with-care__img--desktop {
+    display: none;
+  }
+
+  .created-with-care__img--mobile {
+    display: inline-block;
+  }
+
+}

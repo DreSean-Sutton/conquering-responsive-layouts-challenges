@@ -9,7 +9,6 @@ img {
 /* BORDER */
 
 .border-layout {
-  width: 1200px;
   margin: auto;
 }
 
@@ -51,10 +50,13 @@ img {
   padding: 5rem 0;
 }
 
-#created-with-care__text > h2 {
+.created-with-care__text > h2 {
   margin-top: 0;
 }
 
+.created-with-care__img--mobile {
+  display: none;
+}
 /* UTILITY CLASSES */
 
 .main-layout {
