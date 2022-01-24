@@ -27,7 +27,7 @@
   width: 25%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   section .row {
     display: block;
   }
