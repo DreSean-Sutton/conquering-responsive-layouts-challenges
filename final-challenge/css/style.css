@@ -1,0 +1,58 @@
+:root {
+  --hero-section-color: #3B4050;
+  --nav-section-color: #2E323F;
+  --light-gold: #A59678;
+  --charcoal-color: #6F737F;
+}
+
+/* Base element styling */
+
+.white-color {
+  color: #FFF;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+span {
+  color: var(--light-gold);
+}
+/* Nav section */
+
+#nav-section {
+  background-color: var(--nav-section-color)
+}
+
+/* HERO SECTION */
+
+#hero-section {
+  background-color: var(--hero-section-color);
+}
+
+/* THREE-COLUMN SECTION */
+
+#three-column-section {
+  background-color: var(--charcoal-color);
+}
+#three-column-section h2 {
+  color: var(--light-gold);
+  background
+}
