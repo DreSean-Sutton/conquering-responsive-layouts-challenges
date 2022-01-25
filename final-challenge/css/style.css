@@ -4,6 +4,9 @@
   --light-gold: #A59678;
   --charcoal-color: #6F737F;
 }
+.hidden {
+  display: none !important;
+}
 
 /* Base element styling */
 
@@ -39,6 +42,13 @@ span {
 }
 
 /* Nav section */
+
+.nav {
+  transition: 1000ms;
+}
+
+.nav__link {
+}
 
 #nav-section {
   background-color: var(--nav-section-color)

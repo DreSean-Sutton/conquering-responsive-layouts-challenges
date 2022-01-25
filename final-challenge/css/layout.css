@@ -1,4 +1,5 @@
 .container {
+  max-width: 1200PX;
   margin: auto;
 }
 
@@ -11,4 +12,10 @@
 }
 .column-one-third {
   width: 33%;
+}
+
+@media all and (min-width: 700px) {
+  .desktop-flex {
+    display: flex;
+  }
 }

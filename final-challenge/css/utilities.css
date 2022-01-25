@@ -12,10 +12,6 @@ ul {
 
 /* HEADER ELEMENT */
 
-.nav {
-  display: none;
-}
-
 .nav__item {
   display: flex;
   flex-direction: column;
