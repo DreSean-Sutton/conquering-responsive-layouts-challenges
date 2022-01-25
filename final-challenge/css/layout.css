@@ -6,6 +6,9 @@
   display: flex;
 }
 
+.column-full {
+  width: 100%;
+}
 .column-one-third {
   width: 33%;
 }

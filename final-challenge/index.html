@@ -12,39 +12,43 @@
 </head>
 <body>
   <header id="nav-section" class="container white-color">
-    <div class="row logo">
-      <a class="" href="">
-        <img class="logo" src="/logo.svg" alt="">
-      </a>
+    <div class="content-layout justify-content-space-between">
+      <div class="logo">
+        <a class="row justify-content-center" href="">
+          <img id="logo" class="logo" src="/logo.svg" alt="">
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="row nav__item hidden">
+          <li class="nav__link">
+            <a href="https://github.com/DreSean-Sutton">home</a>
+          </li>
+          <li class="nav__link">
+            <a href="https://github.com/DreSean-Sutton">about</a>
+          </li>
+          <li class="nav__link">
+            <a href="https://github.com/DreSean-Sutton">contact</a>
+          </li>
+          <li class="nav__link">
+            <a href="https://github.com/DreSean-Sutton">sign in</a>
+          </li>
+          <li class="nav__link nav__link--button">
+            <a>sign up</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="nav">
-      <ul class="row nav__item">
-        <li class="nav__link">
-          <a href="">home</a>
-        </li>
-        <li class="nav__link">
-          <a href="">about</a>
-        </li>
-        <li class="nav__link">
-          <a href="">contact</a>
-        </li>
-        <li class="nav__link">
-          <a href="">sign in</a>
-        </li>
-        <li class="nav__link">
-          <a href="">sign up</a>
-        </li>
-      </ul>
-    </nav>
   </header>
   <main id="hero-section" class="container white-color">
     <div class="row content-layout">
-      <div class="">
+      <div class="column-full">
         <h1>Responsive layouts <span>don&apos;t have to be a struggle</span></h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <a id="learn-button" href="https://github.com/DreSean-Sutton">a want to learn</a>
+        <div class="row column-full">
+          <a id="" class="learn-more" href="https://github.com/DreSean-Sutton">i want to learn</a>
+        </div>
       </div>
     </div>
   </main>
@@ -82,26 +86,56 @@
       </div>
     </div>
   </section>
-  <section class="container">
-    <div class="row content-layout">
-      <div class="">
-
+  <section id="hard" class="container">
+    <div class="row content-layout wrap">
+      <div class="column-full">
+        <h2>It doesn&apos;t have to be so hard</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+        <div>
+          <img src="the-image.jpg" alt="Random drawings">
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+      </div>
+    </div>
+    <div id="breakdown" class="content-layout">
+      <div class="dark breakdown-layout">
+        <h2>Break it down</h2>
+        <p>Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class=" dark breakdown-layout">
+        <h2>Work your way up</h2>
+        <p>Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class=" dark breakdown-layout">
+        <p>Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.
+        </p>
       </div>
     </div>
   </section>
-  <section class="container">
-    <div class="row content-layout">
-      <div class="">
 
-      </div>
-    </div>
-  </section>
-  <section class="container">
-    <div class="row content-layout">
-      <div class="">
-
-      </div>
-    </div>
-  </section>
+  <script src="main.js"></script>
 </body>
 </html>

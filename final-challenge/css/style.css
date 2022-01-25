@@ -17,6 +17,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  text-align: center;
 }
 
 p {
@@ -29,16 +30,22 @@ li {
 
 a {
   color: #FFF;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
 span {
   color: var(--light-gold);
 }
+
 /* Nav section */
 
 #nav-section {
   background-color: var(--nav-section-color)
+}
+
+.nav__link--button > a {
+  background-color: var(--light-gold);
 }
 
 /* HERO SECTION */
@@ -47,12 +54,37 @@ span {
   background-color: var(--hero-section-color);
 }
 
+#hero-section p {
+  color: var(--charcoal-color)
+}
+
+.learn-more {
+  font-size: 1.2rem;
+  background-color: var(--light-gold);
+}
 /* THREE-COLUMN SECTION */
 
 #three-column-section {
-  background-color: var(--charcoal-color);
+  background-color: rgb(248 242 230);
 }
 #three-column-section h2 {
   color: var(--light-gold);
   background
+}
+
+/* HARD SECTION */
+
+#hard h2 {
+  color: var(--light-gold);
+}
+
+/* breakdown section */
+
+#breakdown h2,
+#breakdown p {
+  color: #FFF;
+}
+
+.dark {
+  background-color: var(--nav-section-color);
 }
