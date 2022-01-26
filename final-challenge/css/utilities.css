@@ -21,6 +21,7 @@ img {
 }
 
 ul {
+  padding: 0;
   justify-content: flex-end;
   margin: 0;
 }
@@ -92,20 +93,33 @@ ul {
 .breakdown-layout {
   text-align: center;
   padding: 5% 5%;
+  border-radius: 10px;
 }
 
-#breakdown h2,
-#breakdown p {
+.breakdown-layout h2,
+.breakdown-layout p {
   text-align: center;
 }
 
 /* SURFACE-SECTION */
+
+.surface-section {
+  text-align: center;
+}
 
 .surface-section h2  {
   text-transform: capitalize;
   font-size: 3rem;
 }
 
+.surface-section h3 {
+  color: var(--light-gold);
+}
+
+
+.surface-section li + li {
+  margin-top: 1.5rem;
+}
 /* UTILITY CLASSES */
 
 .content-layout {
@@ -118,9 +132,6 @@ ul {
   .breakdown-layout {
     width: 100%;
   }
-
-
-}
 }
 
 .wrap {
@@ -140,6 +151,7 @@ ul {
 .justify-content-center {
   justify-content: center;
 }
+
 .justify-content-space-between {
   justify-content: space-between;
 }
@@ -152,9 +164,11 @@ ul {
   .hard-section h2 {
     margin-top: 0;
   }
+
   .hard-section {
     width: 40%
   }
+
   .hard-section > .content-layout,
   .breakdown-section > .content-layout {
     width: 100%;

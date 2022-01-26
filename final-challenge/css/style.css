@@ -35,7 +35,6 @@ li {
 
 a {
   color: #FFF;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -44,6 +43,13 @@ span {
 }
 
 /* Nav section */
+.nav-section {
+  background-color: var(--nav-section-color)
+}
+
+.nav-section a {
+  text-transform: uppercase;
+}
 
 .nav {
   transition: 1000ms;
@@ -52,9 +58,6 @@ span {
 .nav__link {
 }
 
-#nav-section {
-  background-color: var(--nav-section-color)
-}
 
 .nav__link--button > a {
   background-color: var(--light-gold);
@@ -111,4 +114,18 @@ span {
 .surface-section {
   background-color: var(--nav-section-color);
   color: white;
+}
+
+.surface-section h2  {
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
+.surface-section p {
+  font-size: 1rem;
+}
+
+.surface-section a {
+  color: rgb(211, 211, 211);
+  text-transform: capitalize;
 }

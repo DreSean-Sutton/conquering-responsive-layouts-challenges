@@ -13,8 +13,9 @@
 .column-full {
   width: 100%;
 }
+
 .column-one-third {
-  width: 33%;
+  width: calc(100% / 3);
 }
 
 @media all and (min-width: 700px) {
