@@ -1,3 +1,6 @@
+:root {
+}
+
 .container {
   max-width: 1200PX;
   margin: auto;
@@ -15,10 +18,25 @@
 }
 
 @media all and (min-width: 700px) {
-  #hard {
-    margin: 0 auto;
-  }
   .flex__desktop {
     display: flex;
+    justify-content: center;
+    gap: 5%;
   }
 }
+
+@media all and (min-width: 700px) {
+
+  width: var(--45-percent--width__desktop);
+}
+
+
+/* h2 margin-top: 0
+
+both container elements width: 45%
+
+get rid of .hard__desktop
+
+get rid of .row
+
+breakdown-section: margin: 0;

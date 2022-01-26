@@ -105,3 +105,10 @@ span {
 .white-color {
   color: #FFF;
 }
+
+/* SURFACE-SECTION */
+
+.surface-section {
+  background-color: var(--nav-section-color);
+  color: white;
+}

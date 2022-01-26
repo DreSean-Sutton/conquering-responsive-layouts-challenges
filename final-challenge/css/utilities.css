@@ -1,3 +1,9 @@
+:root {
+  --gap: 5%;
+  --100-percent--width: width: 100%;
+  --45-percent--width: 45%
+}
+
 /* BASE ELEMENT STYLING */
 
 h2 {
@@ -71,7 +77,14 @@ ul {
 }
 
 .three-column-section p {
+  text-align: center;
   margin: 0.75rem 0 3.5rem;
+}
+
+@media all and (min-width: 700px) {
+  .three-column-section p {
+    text-align: left;
+  }
 }
 
 /* BREAKDOWN SECTION  */
@@ -85,6 +98,14 @@ ul {
 #breakdown p {
   text-align: center;
 }
+
+/* SURFACE-SECTION */
+
+.surface-section h2  {
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
 /* UTILITY CLASSES */
 
 .content-layout {
@@ -94,16 +115,12 @@ ul {
 }
 
 @media all and (min-width: 700px) {
-  .hard__desktop {
-    width: 50%;
-  }
-
   .breakdown-layout {
     width: 100%;
   }
 
 
-  }
+}
 }
 
 .wrap {
@@ -114,15 +131,41 @@ ul {
   gap: 0;
 }
 
- @media all and (min-width: 700px) {
-   .gap__5--percent {
-     gap: 5%;
-   }
- }
+@media all and (min-width: 700px) {
+  .gap__5--percent {
+    gap: var(--gap);
+  }
+}
 
 .justify-content-center {
   justify-content: center;
 }
 .justify-content-space-between {
   justify-content: space-between;
+}
+
+@media all and (min-width: 700px) {
+  .hard-section {
+    margin: 0;
+  }
+
+  .hard-section h2 {
+    margin-top: 0;
+  }
+  .hard-section {
+    width: 40%
+  }
+  .hard-section > .content-layout,
+  .breakdown-section > .content-layout {
+    width: 100%;
+  }
+
+  .breakdown-section {
+    margin: 0;
+    width: 40%;
+  }
+
+  .breakdown-section .breakdown-layout + .breakdown-layout {
+    margin-top: 3rem;
+  }
 }
