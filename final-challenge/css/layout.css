@@ -15,6 +15,9 @@
 }
 
 @media all and (min-width: 700px) {
+  #hard {
+    margin: 0 auto;
+  }
   .desktop-flex {
     display: flex;
   }

@@ -1,5 +1,14 @@
 /* BASE ELEMENT STYLING */
 
+h2 {
+  text-align: center;
+}
+@media all and (min-width: 700px) {
+  h2 {
+    text-align: left;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -60,9 +69,13 @@ ul {
 
 .breakdown-layout {
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 5% 5%;
 }
 
+#breakdown h2,
+#breakdown p {
+  text-align: center;
+}
 /* UTILITY CLASSES */
 
 .content-layout {
@@ -70,7 +83,18 @@ ul {
   margin: auto;
   padding: 2rem 0;
 }
+@media all and (min-height: 700px) {
+  .hard__desktop {
+    width: 50%;
+  }
 
+  .breakdown-layout {
+    width: 100%;
+  }
+
+
+  }
+}
 .wrap {
   flex-wrap: wrap;
 }
