@@ -4,26 +4,29 @@
   --light-gold: #A59678;
   --charcoal-color: #6F737F;
 }
+
 .hidden {
   display: none !important;
 }
 
 /* Base element styling */
 
-.white-color {
-  color: #FFF;
+body {
+  font-family: Roboto, sans-serif;
 }
 
 h1 {
   font-size: 3rem;
+  font-family: 'Merriweather', serif;
 }
 
 h2 {
   font-size: 2rem;
+  font-family: 'Merriweather', serif;
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 li {
@@ -70,7 +73,9 @@ span {
 .learn-more {
   font-size: 1.2rem;
   background-color: var(--light-gold);
+  box-shadow: 0 0 5px 0px grey;
 }
+
 /* THREE-COLUMN SECTION */
 
 #three-column-section {
@@ -95,4 +100,8 @@ span {
 
 .dark {
   background-color: var(--nav-section-color);
+}
+
+.white-color {
+  color: #FFF;
 }
