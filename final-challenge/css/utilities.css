@@ -93,7 +93,6 @@ ul {
 .breakdown-layout {
   text-align: center;
   padding: 5% 5%;
-  border-radius: 10px;
 }
 
 .breakdown-layout h2,
@@ -107,11 +106,6 @@ ul {
   text-align: center;
 }
 
-.surface-section h2  {
-  text-transform: capitalize;
-  font-size: 3rem;
-}
-
 .surface-section h3 {
   color: var(--light-gold);
 }
@@ -120,6 +114,36 @@ ul {
 .surface-section li + li {
   margin-top: 1.5rem;
 }
+
+/*  */
+.navbar-layout__mobile {
+  /* position: relative; */
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.navbar__footer {
+  /* position: absolute; */
+  top: 0;
+  right: 0;
+  font-size: 3rem;
+  width: 30px;
+  min-height: 30px;
+}
+
+.navbar__footer:hover,
+.navbar__footer:focus {
+  color: var(--light-gold);
+  border-radius: 50px;
+}
+.navbar__footer > i {
+  width: 100%;
+  min-height: 30px;
+}
+
 /* UTILITY CLASSES */
 
 .content-layout {
@@ -178,8 +202,13 @@ ul {
     margin: 0;
     width: 40%;
   }
-
+  .breakdown-layout {
+    border-radius: 10px;
+  }
   .breakdown-section .breakdown-layout + .breakdown-layout {
     margin-top: 3rem;
+  }
+  .surface-section h2 {
+    text-align: center;
   }
 }

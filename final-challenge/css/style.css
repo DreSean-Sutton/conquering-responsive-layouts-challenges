@@ -55,6 +55,10 @@ span {
   transition: 1000ms;
 }
 
+.nav__mobile {
+  box-shadow: 0 0 0 5000px 0 rgb(0 0 0);
+}
+
 .nav__link {
 }
 
@@ -111,6 +115,8 @@ span {
 
 /* SURFACE-SECTION */
 
+
+
 .surface-section {
   background-color: var(--nav-section-color);
   color: white;
@@ -128,4 +134,23 @@ span {
 .surface-section a {
   color: rgb(211, 211, 211);
   text-transform: capitalize;
+}
+/* NAVBAR-SECTION__MOBILE */
+
+.navbar-section__mobile {
+  background-color: rgb(14 13 13);
+}
+
+.navbar-section__mobile h3 {
+  color: var(--light-gold);
+}
+
+.navbar__footer {
+  color: white;
+}
+
+.navbar__footer:hover,
+.navbar__footer:focus {
+  color: var(--light-gold);
+  border-radius: 50px;
 }
