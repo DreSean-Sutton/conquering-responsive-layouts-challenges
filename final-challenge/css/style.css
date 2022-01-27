@@ -109,9 +109,21 @@ span {
   background-color: var(--nav-section-color);
 }
 
+.dark__mobile {
+  background-color: var(--nav-section-color);
+}
+
+@media all and (min-width: 700px) {
+  .dark__mobile {
+    background-color: initial;
+  }
+}
 .white-color {
   color: #FFF;
 }
+
+/*  */
+
 
 /* SURFACE-SECTION */
 
@@ -131,10 +143,6 @@ span {
   font-size: 1rem;
 }
 
-.surface-section a {
-  color: rgb(211, 211, 211);
-  text-transform: capitalize;
-}
 /* NAVBAR-SECTION__MOBILE */
 
 .navbar-section__mobile {
@@ -143,6 +151,15 @@ span {
 
 .navbar-section__mobile h3 {
   color: var(--light-gold);
+}
+
+.navbar-section__mobile {
+  color: rgb(211, 211, 211);
+  text-transform: capitalize;
+}
+.navbar-section__mobile a:hover {
+  background-color: var(--light-gold);
+  border-radius: 10rem;
 }
 
 .navbar__footer {
