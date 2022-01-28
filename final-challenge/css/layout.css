@@ -30,14 +30,3 @@
 
   width: var(--45-percent--width__desktop);
 }
-
-
-/* h2 margin-top: 0
-
-both container elements width: 45%
-
-get rid of .hard__desktop
-
-get rid of .row
-
-breakdown-section: margin: 0;
