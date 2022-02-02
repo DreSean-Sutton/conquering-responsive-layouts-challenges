@@ -21,6 +21,7 @@ function toggleTopNavbar (event) {
 function toggleBottomNavbar (event) {
   if ($navSectionMobile.className.includes('hidden')) {
     $navSectionMobile.classList.remove('hidden');
+    $overlay.classList.remove('hidden')
   } else {
     $navSectionMobile.classList.add('hidden');
     $overlay.classList.add('hidden');

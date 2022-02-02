@@ -40,6 +40,9 @@ ul {
   padding: 2rem 0 1rem;
 }
 
+.nav__link {
+  z-index: 9999;
+}
 .nav__link + .nav__link {
   margin-top: 1rem;
 }
@@ -73,6 +76,7 @@ ul {
 .logo {
   height: 30px;
   text-align: center;
+  z-index: 9999;
 }
 
 /* THREE COLUMN SECTION */
@@ -148,7 +152,7 @@ ul {
 }
 
 .navbar-section__mobile li {
-  width: 50%;
+  width: 100%;
   margin-bottom: 0.5rem;
 }
 
