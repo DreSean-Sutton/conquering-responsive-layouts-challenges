@@ -10,8 +10,14 @@
   display: none !important;
 }
 
-.hidden__desktop {
-  display: initial;
+.hidden-mobile-show-desktop {
+  display: none !important;
+}
+
+@media all and (min-width: 700px) {
+  .hidden-mobile-show-desktop {
+    display: initial !important;
+  }
 }
 /* Base element styling */
 
@@ -212,8 +218,18 @@ span {
 .navbar-section__mobile {
   color: rgb(211, 211, 211);
   background-color: var(--dark-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 10%;
+  left: 0;
+  height: 50vh;
+  text-align: center;
+  margin: auto auto 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   text-transform: capitalize;
-  opacity: 0.99;
+  opacity: 0.97;
   z-index: 9999;
   animation: footer-navbar__mobile 300ms ease-in;
   transform-origin: bottom;
@@ -268,7 +284,8 @@ span {
 .navbar__footer:hover,
 .navbar__footer:focus {
   color: var(--light-gold);
-  border-radius: 50px;
+  transform: scale(1.5);
+  transition: 300ms;
 }
 
 .overlay {
@@ -280,6 +297,21 @@ span {
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.nav__icon-section {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+@media all and (min-width: 700px) {
+  .nav__icon-section {
+    display: none;
+  }
 }
 /* UTILITY CLASSES */
 

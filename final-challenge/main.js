@@ -9,21 +9,21 @@ $bottomNavbar.addEventListener('click', toggleBottomNavbar);
 
 
 function toggleTopNavbar (event) {
-  if ((!$navItem.className.includes('hidden')) && (!$navItem.className.includes('desktop'))) {
-    $navItem.classList.add('hidden', 'nav__mobile');
-    $overlay.classList.add('hidden');
+  if ((!$navItem.className.includes('hidden-mobile-show-desktop'))) {
+    $navItem.classList.add('hidden-mobile-show-desktop', 'nav__mobile');
+    $overlay.classList.add('hidden-mobile-show-desktop');
   } else {
-    $navItem.classList.remove('hidden', 'nav__mobile');
-    $overlay.classList.remove('hidden');
+    $navItem.classList.remove('hidden-mobile-show-desktop', 'nav__mobile');
+    $overlay.classList.remove('hidden-mobile-show-desktop');
   }
 }
 
 function toggleBottomNavbar (event) {
-  if ($navSectionMobile.className.includes('hidden')) {
-    $navSectionMobile.classList.remove('hidden');
-    $overlay.classList.remove('hidden')
+  if ($navSectionMobile.className.includes('hidden-mobile-show-desktop')) {
+    $navSectionMobile.classList.remove('hidden-mobile-show-desktop');
+    $overlay.classList.remove('hidden-mobile-show-desktop')
   } else {
-    $navSectionMobile.classList.add('hidden');
-    $overlay.classList.add('hidden');
+    $navSectionMobile.classList.add('hidden-mobile-show-desktop');
+    $overlay.classList.add('hidden-mobile-show-desktop');
   }
 }
