@@ -45,6 +45,11 @@ span {
 
 /* Nav section */
 .nav-section {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: var(--nav-section-color);
 }
 
@@ -52,13 +57,26 @@ span {
   z-index: 9999;
 }
 
+.header__navbar {
+  position: fixed;
+  top: 2rem;
+  left: 3%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.header__navbar:focus,
+.header__navbar:active {
+  opacity: .85;
+}
+
 .nav-section a {
   text-transform: uppercase;
 }
 
-.nav {
+/* .nav {
   transition: 1000ms;
-}
+} */
 
 .nav__mobile {
   box-shadow: 0 0 0 5000px 0 rgb(0 0 0);
@@ -74,11 +92,11 @@ span {
 
 /* HERO SECTION */
 
-#hero-section {
+.hero-section {
   background-color: var(--hero-section-color);
 }
 
-#hero-section p {
+.hero-section p {
   color: var(--charcoal-color)
 }
 
@@ -86,14 +104,15 @@ span {
   font-size: 1.2rem;
   background-color: var(--light-gold);
   box-shadow: 0 0 5px 0px grey;
+  text-transform: uppercase;
 }
 
 /* THREE-COLUMN SECTION */
 
-#three-column-section {
+.three-column-section {
   background-color: rgb(248 242 230);
 }
-#three-column-section h2 {
+.three-column-section h2 {
   color: var(--light-gold);
 }
 
@@ -164,15 +183,11 @@ span {
 
 .navbar-section__mobile h3 {
   color: var(--light-gold);
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .navbar-section__mobile li {
-  font-size: 0.7rem;
-}
-
-.navbar-icon--bottom {
-
+  font-size: 0.9rem;
 }
 
 .navbar__footer {

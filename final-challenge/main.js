@@ -1,10 +1,10 @@
 let $navItem = document.querySelector('#header-nav');
-let $CRLLogo = document.querySelector('#logo');
+let $headerNavbar = document.querySelector('#header__navbar');
 let $bottomNavbar = document.querySelector('.navbar-icon--bottom');
 let $navSectionMobile = document.querySelector('#navbar-section__mobile');
 let $overlay = document.querySelector('.overlay');
 
-$CRLLogo.addEventListener('click', toggleTopNavbar);
+$headerNavbar.addEventListener('click', toggleTopNavbar);
 $bottomNavbar.addEventListener('click', toggleBottomNavbar);
 
 
