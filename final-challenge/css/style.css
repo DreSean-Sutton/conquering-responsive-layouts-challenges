@@ -10,6 +10,9 @@
   display: none !important;
 }
 
+.hidden__desktop {
+  display: initial;
+}
 /* Base element styling */
 
 body {
@@ -74,9 +77,42 @@ span {
   text-transform: uppercase;
 }
 
-/* .nav {
-  transition: 1000ms;
-} */
+.nav {
+  animation: header-navbar__mobile 300ms ease-in-out;
+  transform-origin: top;
+}
+
+@keyframes header-navbar__mobile {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+
+  20% {
+    transform: scaleY(0.3);
+    opacity: 0.25;
+  }
+
+  40% {
+    transform: scaleY(0.6);
+    opacity: 0.8;
+  }
+
+  60% {
+    transform: scaleY(0.9);
+    opacity: 0.75;
+  }
+
+  80% {
+    transform: scaleY(1.2);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: scaleY(1.0);
+    opacity: 1;
+  }
+}
 
 .nav__mobile {
   box-shadow: 0 0 0 5000px 0 rgb(0 0 0);
@@ -179,6 +215,40 @@ span {
   text-transform: capitalize;
   opacity: 0.99;
   z-index: 9999;
+  animation: footer-navbar__mobile 300ms ease-in;
+  transform-origin: bottom;
+}
+
+@keyframes footer-navbar__mobile {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+
+  20% {
+    transform: scaleY(0.3);
+    opacity: 0.25;
+  }
+
+  40% {
+    transform: scaleY(0.6);
+    opacity: 0.8;
+  }
+
+  60% {
+    transform: scaleY(0.9);
+    opacity: 0.75;
+  }
+
+  80% {
+    transform: scaleY(1.2);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: scaleY(1.0);
+    opacity: 1;
+  }
 }
 
 .navbar-section__mobile h3 {
@@ -192,6 +262,7 @@ span {
 
 .navbar__footer {
   color: white;
+  cursor: pointer;
 }
 
 .navbar__footer:hover,
