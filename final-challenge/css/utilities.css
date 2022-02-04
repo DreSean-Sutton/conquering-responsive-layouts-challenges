@@ -235,7 +235,7 @@ ul {
   }
 
   .hard-section {
-    width: 40%
+    width: 37.5%
   }
 
   .hard-section > .content-layout,
@@ -245,7 +245,7 @@ ul {
 
   .breakdown-section {
     margin: 0;
-    width: 40%;
+    width: 37.5%;
   }
   .breakdown-layout {
     border-radius: 10px;
