@@ -13,7 +13,12 @@
 .hidden-mobile-show-desktop {
   display: none !important;
 }
+
 @media all and (min-width: 700px) {
+  .hidden-mobile-show-desktop {
+    display: initial !important;
+  }
+
   .mobile-only {
     display: none !important;
   }
@@ -126,10 +131,6 @@ span {
   }
 }
 
-.nav__link {
-}
-
-
 .nav__link--button > a {
   background-color: var(--light-gold);
 }
@@ -190,7 +191,6 @@ span {
   color: #FFF;
 }
 
-/*  */
 
 .gold-color--divider {
   background-color: black;
