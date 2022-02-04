@@ -21,14 +21,14 @@
   <header id="nav-section" class="container nav-section white-color">
     <div class="content-layout justify-content-space-between">
       <div class="row align-items-center justify-content-center">
-        <div class="">
+        <div class="mobile-only">
           <i id="header__navbar" class="fas fa-bars header__navbar"></i>
         </div>
         <div class="logo">
           <img id="logo" class="logo" src="/logo.svg" alt="">
         </div>
       </div>
-      <nav id="header-nav" class=" header-nav nav hidden-mobile-show-desktop">
+      <nav id="header-nav" class=" header-nav nav mobile-only hidden-mobile-show-desktop">
         <ul class="row nav__item">
           <li class="nav__link">
             <a href="https://github.com/DreSean-Sutton" target="_blank">home</a>
@@ -163,10 +163,8 @@
       </div>
     </div>
   </section>
-  <section id="navbar-section__mobile" class="container navbar-section__mobile hidden-mobile-show-desktop">
-    <div class="row wrap navbar-content-layout__mobile">
-      <div class="column-full">
-      </div>
+  <section id="navbar-section__mobile" class="container navbar-section__mobile mobile-only hidden-mobile-show-desktop">
+    <div class="row wrap navbar-content-layout__mobile mobile-only">
       <div class="column-full">
         <h3>Other things</h3>
         <ul class="row wrap justify-content-center align-items-center">
@@ -215,14 +213,14 @@
       </div>
     </div>
   </section>
-  <div class="container black-color nav__icon-section">
+  <div class="container black-color nav__icon-section mobile-only">
     <div id="navbar-icon--bottom" class="navbar-icon--bottom text-align-center">
       <div class="column-full navbar__footer">
         <i class="fas fa-ellipsis-v"></i>
       </div>
     </div>
   </div>
-  <div class="overlay hidden"></div>
+  <div class="overlay mobile-only hidden-mobile-show-desktop"></div>
   <script src="main.js"></script>
 </body>
 </html>

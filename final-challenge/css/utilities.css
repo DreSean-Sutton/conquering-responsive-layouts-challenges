@@ -223,6 +223,9 @@ ul {
 }
 
 @media all and (min-width: 700px) {
+  .header__navbar {
+    display: none;
+  }
   .hard-section {
     margin: 0;
   }
