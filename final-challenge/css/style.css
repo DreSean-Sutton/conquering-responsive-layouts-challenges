@@ -4,6 +4,7 @@
   --light-gold: #A59678;
   --charcoal-color: #6F737F;
   --dark-color: #181818;
+  --text-shadow__dark-background: 0px 2px 3px black;
 }
 
 .hidden {
@@ -33,11 +34,13 @@ body {
 h1 {
   font-size: 3rem;
   font-family: 'Merriweather', serif;
+  text-shadow: 0 3px 3px black;
 }
 
 h2 {
   font-size: 2rem;
   font-family: 'Merriweather', serif;
+  text-shadow: 0 5px 10px black;
 }
 
 p {
@@ -65,6 +68,10 @@ span {
   left: 0;
   right: 0;
   background-color: var(--nav-section-color);
+  box-shadow: 0px 0 10px 3px black;
+  /* transition: 500ms; */
+  animation: nav-section__mobile 1000ms ease-in;
+  transform-origin: top;
 }
 
 @media all and (min-width: 700px) {
@@ -72,6 +79,32 @@ span {
     position: initial;
   }
 }
+
+/* @keyframes nav-section__mobile {
+  0% {
+    min-height: 100%;
+  }
+
+  20% {
+    min-height: 100%;
+  }
+
+  40% {
+    min-height: 100%;
+  }
+
+  60% {
+    min-height: 100%;
+  }
+
+  80% {
+    min-height: 100%;
+  }
+
+  100% {
+    min-height: 100%;
+  }
+} */
 
 .navbar-section__mobile {
   z-index: 9999;
@@ -131,8 +164,13 @@ span {
   }
 }
 
+.nav__item {
+  text-shadow: 0px 3px 5px black;
+}
 .nav__link--button > a {
   background-color: var(--light-gold);
+  box-shadow: 0px 2px 5px 0px black;
+  text-shadow: 0px 2px 3px black;
 }
 
 /* HERO SECTION */
@@ -142,13 +180,16 @@ span {
 }
 
 .hero-section p {
-  color: var(--charcoal-color)
+  color: var(--charcoal-color);
+  text-shadow: var(--text-shadow__dark-background);
 }
 
 .learn-more {
   font-size: 1.2rem;
   background-color: var(--light-gold);
-  box-shadow: 0 0 5px 0px grey;
+  box-shadow: 0 0 5px 2px grey,
+  0px 3px 5px 1px black;
+  text-shadow: 0 2px 5px black, 0 0 5px white;
   text-transform: uppercase;
 }
 
@@ -159,19 +200,25 @@ span {
 }
 .three-column-section h2 {
   color: var(--light-gold);
+  text-shadow: 0 2px 2px black
 }
 
 /* HARD SECTION */
 
-#hard h2 {
+.hard-section h2 {
   color: var(--light-gold);
+  text-shadow: 0 2px 1px black;
 }
 
 /* breakdown section */
 
-#breakdown h2,
-#breakdown p {
+.breakdown-section h2,
+.breakdown-section p {
   color: #FFF;
+}
+
+.breakdown-section p {
+  text-shadow: var(--text-shadow__dark-background);
 }
 
 .dark {
@@ -213,6 +260,7 @@ span {
 
 .surface-section p {
   font-size: 1rem;
+  text-shadow: var(--text-shadow__dark-background);
 }
 
 /* NAVBAR-SECTION__MOBILE */
@@ -305,6 +353,7 @@ span {
   right: 0;
   bottom: 0;
   left: 0;
+  animation: overlay 500ms ease-out;
 }
 
 .nav__icon-section {
@@ -314,6 +363,7 @@ span {
   bottom: 0;
   left: 0;
   z-index: 9999;
+  box-shadow: 0 0px 3px 1px #000000;
 }
 
 /* UTILITY CLASSES */
