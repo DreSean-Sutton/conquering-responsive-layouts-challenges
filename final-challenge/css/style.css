@@ -80,31 +80,38 @@ span {
   }
 }
 
-/* @keyframes nav-section__mobile {
+/* THIS IS VERY CLOSE, NEEDS TO BE REVISED */
+@keyframes nav-section__mobile {
   0% {
-    min-height: 100%;
+    transform: scaleY(0);
+    opacity: 0;
   }
 
   20% {
-    min-height: 100%;
+    transform: scaleY(0.3);
+    opacity: 0.25;
   }
 
   40% {
-    min-height: 100%;
+    transform: scaleY(0.6);
+    opacity: 0.8;
   }
 
   60% {
-    min-height: 100%;
+    transform: scaleY(0.9);
+    opacity: 0.75;
   }
 
   80% {
-    min-height: 100%;
+    transform: scaleY(1.2);
+    opacity: 0.9;
   }
 
   100% {
-    min-height: 100%;
+    transform: scaleY(1.0);
+    opacity: 1;
   }
-} */
+}
 
 .navbar-section__mobile {
   z-index: 9999;
@@ -353,9 +360,34 @@ span {
   right: 0;
   bottom: 0;
   left: 0;
-  animation: overlay 500ms ease-out;
+  animation: overlay 250ms ease-out;
 }
 
+@keyframes overlay {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0.98;
+  }
+}
 .nav__icon-section {
   position: fixed;
   top: 0;
